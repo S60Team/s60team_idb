@@ -1,0 +1,7 @@
+﻿function AJAXandStoreImage(e,t){
+var n,o=window.indexedDB||window.webkitIndexedDB||window.mozIndexedDB||window.OIndexedDB||window.msIndexedDB,r=(window.IDBTransaction||window.webkitIDBTransaction||window.OIDBTransaction||window.msIDBTransaction,
+window.URL||window.webkitURL),s=o.open("s60teamFiles",1),c=function(e){e.createObjectStore("pictures")},i=function(){var t,n=new XMLHttpRequest;n.open("GET",e,!0),n.responseType="blob",n.addEventListener("load",function(){
+200===n.status&&(t=n.response,u(t))},!1),n.send()},u=function(e){var o=n.transaction(["pictures"],"readwrite");try{o.objectStore("pictures").put(e,t);o.objectStore("pictures").get(t).onsuccess=function(e){
+var n=e.target.result,o=r.createObjectURL(n);document.getElementById(t).setAttribute("src",o)}}catch(e){}};s.onerror=function(e){},s.onsuccess=function(e){if((n=s.result).onerror=function(e){},n.setVersion){
+if(1!=n.version)n.setVersion(1).onsuccess=function(){c(n),i()};else i()}else{var o=n.transaction(["pictures"],"readwrite");o.objectStore("pictures").get(t).onsuccess=function(e){try{var n=e.target.result,o=r.createObjectURL(n)
+;document.getElementById(t).setAttribute("src",o)}catch(e){i()}},o.objectStore("pictures").get(t).onerror=function(e){i()}}},s.onupgradeneeded=function(e){c(e.target.result)}}
