@@ -10,8 +10,8 @@
   и [техника Заглушки-изображения низкого качества (LQIP)](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders),
   написал небольшую функцию.
 
-Версия AJAX: Firefox 17, Chrome 49, Opera 36 и Internet Explorer 10 (4.8кб исходник и 1.9кб в сжатом виде).
-Версия Fetch: Firefox 53, Chrome 49, Opera 36 и Safari 10.3 (4.4кб исходник и 1.6кб в сжатом виде).
+**Версия AJAX: Firefox 17, Chrome 49, Opera 36 и Internet Explorer 10 (4.8кб исходник и 1.9кб в сжатом виде).**
+**Версия Fetch: Firefox 53, Chrome 49, Opera 36 и Safari 10.3 (4.4кб исходник и 1.6кб в сжатом виде).**
 
 ## Как применить:
 1. Для начала нам нужно создать изображения-заглушки: размер 10% от оригинала и качеством 40%.
