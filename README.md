@@ -11,8 +11,8 @@ After reading [Storing images in indexedDB](https://hacks.mozilla.org/2012/02/st
   and [Low Quality Image Placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders),
   i've wrote a small function.
 
-AJAX version: Firefox 17, Chrome 49, Opera 36 and Internet Explorer 10 (4.8kb source and 1.9kb compressed).
-Fetch version: Firefox 53, Chrome 49, Opera 36 and Safari 10.3 (4.4kb source and 1.6kb compressed).
+** AJAX version: Firefox 17, Chrome 49, Opera 36 and Internet Explorer 10 (4.8kb source and 1.9kb compressed). **
+** Fetch version: Firefox 53, Chrome 49, Opera 36 and Safari 10.3 (4.4kb source and 1.6kb compressed). **
 
 ## How to use:
 1. First we need to create placeholder images:
