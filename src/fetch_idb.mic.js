@@ -1,0 +1,4 @@
+﻿function StoreImageInIDB(t,e){var r,c=window.indexedDB,n=window.URL||window.webkitURL,o=c.open("s60teamFiles",1),u=function(){fetch(t).then(t=>t.blob()).then(t=>(function(t){var c=r.transaction(["pictures"],"readwrite");try{
+c.objectStore("pictures").put(t,e),c.objectStore("pictures").get(e).onsuccess=function(t){var r=t.target.result,c=n.createObjectURL(r);document.getElementById(e).setAttribute("src",c)}}catch(t){}})(t))};o.onerror=function(t){},
+o.onsuccess=function(t){(r=o.result).onerror=function(t){};var c=r.transaction(["pictures"],"readwrite");c.objectStore("pictures").get(e).onsuccess=function(t){try{var r=t.target.result,c=n.createObjectURL(r)
+;document.getElementById(e).setAttribute("src",c)}catch(t){u()}},c.objectStore("pictures").get(e).onerror=function(t){u()}},o.onupgradeneeded=function(t){t.target.result.createObjectStore("pictures")}}
